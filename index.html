@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+	
+
+	<div id="introPage" class="container">
+		<h1 id="introHeader">Lets Play Disney Trivia Game</h1>
+		<button class="btn btn-warning btn-lg" id="play">Play</button>
+	</div>
+
+	<div id="endGame" class="container">
+		<h1>Bye Bye!!</h1>
+		<h2>Your Score is : <span id="lastScore"></span></h2>
+		<h2>Please Press below button to Play Again !!</h2>
+		<button class="btn btn-danger btn-lg" id="playAgain">Play Again</button>
+	</div>	
+	
+<div id="mainDiv">	
+	<!--HEADER -->
+	<header id="header">
+		<div class="container text-center">
+		<h2 class="text-center"><b>Disney Trivia Game</b></h2>
+		</div>
+	</header>
+	
+	<div id=""><br><br>
+	
+	<!-- DISPLAY SCORE, QUESTION, AND TIMER -->
+	<div id="questPage" class="center-block">
+
+		<div class="row">
+			<div class="col-md-3 text-center">
+				<div id="scoreboard" class="text-left badge">Score :: <span id="score" ></span></div>
+			</div>
+			<div class="col-md-7 text-center">
+				<h2><div id="question">Question?</div></h2>	
+			</div>
+
+			<div class="col-md-2 text-right">
+				<div id="wrapper" class="wrapper">
+					  <div id="spinner" class="spinner pie"></div>
+					  <div id="filler" class="filler pie"></div>
+					  <div id="mask" class="mask"></div>
+					  <div id="timer" style=""></div>
+				</div>
+		</div>
+	</div>
+	<br><br>
+		
+	<!--DISPLAY IMAGE AND NEXT BUTTON -->	
+	<div class="row text-center" >
+		
+		<div id="image" class="col-md-4 col-md-offset-4" style="margin-bottom: 40px;"> </div>
+		
+		<div class="col-md-4">
+			<a href="#" id="next">
+				<img src="assets/img/nextButton.png" id="nextImage">
+			</a>
+		</div>
+		<br><br>
+	<div>
+
+	<br><br>
+	<!-- DISPLAY 4 OPTIONS TO CHOOSE-->
+	<div class="row">
+	<div id="options" class="list-group">
+		<br><br>
+		<a href="#" id="A" class="list-group-item text-center col-md-offset-2 col-md-4 text-white hoverClass"></a>
+		<a href="#" id="B" class="list-group-item text-center col-md-4 text-white hoverClass"></a>
+		<a href="#" id="C" class="list-group-item text-center col-md-offset-2 col-md-4 text-white hoverClass"></a>
+		<a href="#" id="D" class="list-group-item text-center col-md-4 text-white hoverClass"></a>
+	</div>
+	</div>
+
+	<div class="modal fade" id="myModal" role="dialog" >
+		<div id="myModalBox" class="modal-dialog modal-sm">
+		    
+		      <!-- Modal content-->
+			<div class="modal-content">
+			    <div class="modal-body">
+			        <img id="crossImg" src="assets/img/red-cross.jpg">
+			          <p>Incorrect Answer</p>
+			    </div>
+			    <div class="modal-footer">
+			       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			    </div>
+			</div>
+		      
+		</div>
+	</div>
+
+	
+	
+	<div id="dialog" class="modal-content modal-sm">
+		<p class="text-center modal-header text-danger"><b>TIMES UP!! </b></p>
+		<p class="modal-body">Please Press next to proceed.</p>
+	</div>
+
+	</div>	
+</div>	
+
+
+	<script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>

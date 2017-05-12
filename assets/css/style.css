@@ -1,0 +1,189 @@
+#header{
+	background: linear-gradient(to bottom,rgba(102,196,254,1) 0,rgba(30,152,222,1) 100%,rgba(30,105,222,1) 100%);
+	color: white;height: 100px ;
+}
+
+#mainDiv::after {
+  content: "";
+  background: url('../img/mickey1.jpg');
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+#introPage{
+	background-image: url('../img/disney.jpg');width: 100%;height: 800px;
+}
+#introHeader{
+	color: white;margin-top: 10%;
+}
+#options{
+	margin-top: 20px;
+}
+#mainDiv{
+	display: none;
+}
+
+#scoreboard{
+	margin-top: 20px;font-size: 18px;background-color:black;color:white;
+}
+#timer{
+	font-size: 30px;z-index: 400;position: absolute;top: 20px;left: 33px;
+}
+#nextImage{
+	width: 100px;height: 100px;position: absolute;top: 100px;
+}
+#myModalBox{
+	position: absolute;left: 40%;bottom: 100px;
+}
+#crossImg{
+	float:left;width: 75px;height: 75px;
+}
+#dialog{
+	border: 1px groove white;background-color: white;color: black;z-index: 90;
+	font-size: 20px;
+	/*height: 80px;*/
+}
+#endGame{
+	background-image: url('../img/endGame.jpg');width: 100%;height: 800px;
+	display: none;
+	color: darkpink;
+}
+.hoverClass{
+	border:1px grey solid!important;
+}
+
+.ui-dialog-titlebar{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: 100;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none !important;
+	background: linear-gradient(to bottom,rgba(102,196,254,1) 0,rgba(30,152,222,1) 100%,rgba(30,105,222,1) 100%) !important;
+}
+
+a:visited{
+	text-decoration: none;
+}
+
+
+/*.headerImg{
+	background-image: url('../img/mickey.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	/*background-color: hsla(0,100%,50%,0.3);*/
+/*}
+.jumbotron{
+	background-color: hsla(350,100%,50%,0.3);
+}
+.headerImg1{
+	background-image: url('../img/disney-header.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	object-position: 50% 50%;
+
+}*/
+
+.image{
+	width: 400px;
+	height: 300px;
+}
+
+/*
+.innerCountdown{
+	/*animation: rotate 10s linear infinite;*/
+	/*border:10px solid hsla(220,100%,50%,0.7);*/
+	/*left: 50%;*/
+	/*border-radius: 100%;height: 80px;width:80px;*/
+	/*z-index: 400;*/
+	/*margin-top: 100px;*/
+	/*border-right: none;*/
+	/*-webkit-transform-origin: 0 0;
+	-webkit-transform: rotateY(-45deg);*/
+/*}*/
+.wrapper{
+	width: 80px;
+	height: 80px;
+	position: relative;
+	background: white;
+	/*margin-top: 100px;*/
+}
+
+.pie{
+	width: 50%;
+	height: 100%;
+	/*background: #08C;*/
+	position: absolute;
+	transform-origin: 100% 50%;
+	border: 10px solid hsla(220,100%,50%,0.7);
+}
+
+.spinner {
+  border-radius: 40px 0 0 40px;
+  z-index: 200;
+  border-right: none;
+}
+
+.spinnerA{
+	animation: rota 20s linear ;
+}
+
+
+@keyframes rota {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.filler {
+  border-radius: 0 40px 40px 0;
+  z-index: 100;
+  border-left: none;
+  left: 50%;
+  opacity: 0;
+  }
+
+  .fillerA{
+  	animation: fill 20s steps(1, end) ;
+  }
+
+  @keyframes fill {
+  0%        { opacity: 0; }
+  50%, 100% { opacity: 1; }
+}
+
+.mask {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  z-index: 300;
+  opacity: 1;
+  background: inherit;
+}
+
+.maskA{
+	animation: mask 20s steps(1, end) ;
+}
+
+@keyframes mask {
+  0%        { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
